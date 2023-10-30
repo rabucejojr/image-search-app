@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: larger;
+  width: 100%;
+
+}
+
+.header {
+  margin: 5px;
+}
+
+#submitBtn {
+  background-color: royalblue;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+}
+
+#searchInput {
+  margin-top: 40px;
+  width: 400px;
+  height: 30px;
+}
+
+#searchInput :hover {
+  color: aqua;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 23%;
+}
+
+#formId {
+  width: 100%;
+  /* display: flex; */
+}
+
+#img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
