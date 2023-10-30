@@ -1,7 +1,5 @@
 # Image Search App
 
-(https://giphy.com/clips/soulpancake-clap-round-of-applause-kid-president-9s1EXS3vImjm1yaqrK) 
-
 ## Overview
 
 This is a simple React-based Image Search App. It allows users to search for images using the Unsplash API and displays the results in a grid format. 
