@@ -14,7 +14,7 @@ const TextInput = () => {
   const fetchImages = async () => {
     try {
       const result = await axios.get(
-        `${API}?query=${searchInput.current}&page=1&per_page=${IMAGE_PER_PAGE}&client_id=${API_KEY}`
+        `${API}?&page=1&query=${searchInput.current}&client_id=${API_KEY}`
       );
       console.log(result.data.results); //print result of fetch in the console
       setData(result.data.results);
@@ -40,7 +40,6 @@ const TextInput = () => {
           id="searchInput"
           ref={searchInput}
         />
-        {console.log(searchInput)}
         <Button />
       </form>
       <div id="card-container"> 
