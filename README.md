@@ -1,6 +1,6 @@
 # Image Search App
 
-<!-- ![Demo](demo.gif) If you have a demo gif or screenshot, replace with your file path -->
+(https://giphy.com/clips/soulpancake-clap-round-of-applause-kid-president-9s1EXS3vImjm1yaqrK) 
 
 ## Overview
 
