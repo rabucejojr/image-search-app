@@ -6,7 +6,7 @@ import '/home/image-search-app/src/components/styles.css'
 
 const API = "https://api.unsplash.com/search/photos";
 const API_KEY = process.env.REACT_APP_KEY;
-const IMAGE_PER_PAGE = 12;
+const IMAGE_PER_PAGE = 20;
 
 const TextInput = () => {
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ const TextInput = () => {
   const fetchImages = async () => {
     try {
       const result = await axios.get(
-        `${API}?&page=1&query=${searchInput.current}&client_id=${API_KEY}`
+        `${API}?&page=1&per_page=${IMAGE_PER_PAGE}&query=${searchInput.current}&client_id=${API_KEY}`
       );
       console.log(result.data.results); //print result of fetch in the console
       setData(result.data.results);
