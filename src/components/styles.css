@@ -1,0 +1,65 @@
+
+.header {
+    margin: 5px;
+  }
+  
+  #submitBtn {
+    background-color: royalblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  #searchInput {
+    margin-top: 40px;
+    width: 400px;
+    height: 30px;
+  }
+  
+  #searchInput :hover {
+    color: aqua;
+  }
+  
+  #card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 23%;
+  }
+  
+  #formId {
+    width: 100%;
+    /* display: flex; */
+  }
+  
+  #img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  #title{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  #title:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

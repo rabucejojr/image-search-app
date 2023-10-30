@@ -1,4 +1,4 @@
-import TextInput from "../components/TextInput";
+import { TextInput } from "../components";
 
 const Search = () => {
   return (
