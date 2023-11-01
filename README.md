@@ -2,9 +2,8 @@
 
 ## Overview
 
+This project is intended for self-study purposes only: to gain knowledge on external API integration with Axios and visualizing outputs with ReactJS.
 This is a simple React-based Image Search App. It allows users to search for images using the Unsplash API and displays the results in a grid format. 
-
-As of now, I am currently fetching data from Unsplash API; search images to follow.
 
 ## Features
 
