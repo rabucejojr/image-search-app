@@ -2,11 +2,11 @@ import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import Card from "./Card";
-import '/home/image-search-app/src/components/styles.css'
+import "/home/image-search-app/src/components/styles.css";
 
 const API = "https://api.unsplash.com/search/photos";
 const API_KEY = process.env.REACT_APP_KEY;
-const IMAGE_PER_PAGE = 20;
+const IMAGE_PER_PAGE = 50;
 
 const TextInput = () => {
   const [data, setData] = useState([]);
@@ -29,7 +29,8 @@ const TextInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(searchInput.current.value);
+    console.log(searchInput.current);
+    fetchImages();
   };
 
   return (
@@ -40,12 +41,19 @@ const TextInput = () => {
           placeholder="Type something to search..."
           id="searchInput"
           ref={searchInput}
+          onChange={(e) => {
+            searchInput.current = e.target.value;
+          }}
         />
         <Button />
       </form>
-      <div id="card-container"> 
+      <div id="card-container">
         {data.map((item, index) => (
-          <Card key={index} title={item.alt_description} link={item.urls.full} />
+          <Card
+            key={index}
+            title={item.alt_description}
+            link={item.urls.full}
+          />
         ))}
       </div>
     </div>
