@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import Card from "./Card";
-import "/home/image-search-app/src/components/styles.css";
+// import "/home/image-search-app/src/components/styles.css";
+import '/home/image-search-app/src/css/styles.css'
 
 const API = "https://api.unsplash.com/search/photos";
 const API_KEY = process.env.REACT_APP_KEY;

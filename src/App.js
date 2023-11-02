@@ -1,4 +1,4 @@
-import Search from './pages/Search'
+import Search from './pages/Home'
 
 
 function App() {
